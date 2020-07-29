@@ -1,0 +1,88 @@
+// Transitions  Mixins
+
+@mixin transition-fast {
+  -ms-transition:all 300ms ease-in-out;
+  -o-transition:all 300ms ease-in-out;
+  -moz-transition:all 300ms ease-in-out;
+  -webkit-transition:all 300ms ease-in-out;
+  transition:all 300ms ease-in-out;
+}
+
+@mixin transition-modal {
+  -ms-transition:all 400ms ease-in-out;
+  -o-transition:all 400ms ease-in-out;
+  -moz-transition:all 400ms ease-in-out;
+  -webkit-transition:all 400ms ease-in-out;
+  transition:all 400ms ease-in-out;
+}
+
+@mixin transition-video {
+  -ms-transition:all 600ms ease-in-out;
+  -o-transition:all 600ms ease-in-out;
+  -moz-transition:all 600ms ease-in-out;
+  -webkit-transition:all 600ms ease-in-out;
+  transition:all 600ms ease-in-out;
+}
+
+@mixin transition-300-ms {
+  -ms-transition:all 300ms ease-in-out;
+  -o-transition:all 300ms ease-in-out;
+  -moz-transition:all 300ms ease-in-out;
+  -webkit-transition:all 300ms ease-in-out;
+  transition:all 300ms ease-in-out;
+}
+
+@mixin set-transition($speed) {
+  -ms-transition:all $speed ease-in-out;
+  -o-transition:all $speed ease-in-out;
+  -moz-transition:all $speed ease-in-out;
+  -webkit-transition:all $speed ease-in-out;
+  transition:all $speed ease-in-out;
+}
+
+// Grid Mixins
+
+@mixin skywalker-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+// Button Mixins
+
+@mixin push-g-btn-static($color, $bg-color) {
+   color:$color;
+   background:$bg-color;
+}
+
+@mixin push-g-btn-hover($color, $bg-color) {
+   color:$color;
+   background:$bg-color;
+}
+
+@mixin push-g-btn-visited($color, $bg-color) {
+   color:$color;
+   background:$bg-color;
+}
+
+@mixin push-g-btn-active($color, $bg-color) {
+   color:$color;
+   background:$bg-color;
+}
+
+// Background Mixins
+
+@mixin push-g-bg-position($bg-size,$pos1, $pos2) {
+  background-size:$bg-size !important;
+  background-position:$pos1 $pos2 !important;
+  background-repeat:no-repeat !important;
+}
+
+// Common Effects
+
+@mixin push-drop-shadow {
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+}

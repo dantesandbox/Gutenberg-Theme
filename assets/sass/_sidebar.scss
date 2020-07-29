@@ -1,0 +1,32 @@
+// Sidebars
+
+.theme-sidebar {
+
+  background:$grey-bg;
+  padding:20px;
+
+  h2 {
+    margin-top:0px;
+    font-family:$body-font;
+    font-weight:900;
+  }
+
+  ul {
+    margin:0;
+    padding:0;
+
+    li {
+      list-style-type:none;
+      padding:20px 0px 20px 0px;
+      border-bottom:2px solid $secondary;
+
+      a {
+        color:$text-color;
+        font-family:$body-font;
+        font-weight:300;
+        font-size:18px;
+      }
+    }
+  }
+
+}

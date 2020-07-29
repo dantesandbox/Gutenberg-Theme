@@ -1,0 +1,34 @@
+{
+  "name": "skywalker",
+  "version": "1.0.0",
+  "description": "Push Digital's First Gutenberg Ready Theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Push Digital",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "browser-sync": "^2.26.7",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^8.0.0-beta.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-inject-modules": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "@babel/traverse": "^7.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pushdigidante/Firehouse-Strategies.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pushdigidante/Firehouse-Strategies/issues"
+  },
+  "homepage": "https://github.com/pushdigidante/Firehouse-Strategies#readme"
+}

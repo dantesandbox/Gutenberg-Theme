@@ -1,0 +1,171 @@
+/*
+
+Module: theme Grid (Flex CSS)
+Version: 1.0.0
+*/
+
+// Containers and Rows
+
+
+.theme-container {
+  max-width:1200px;
+  margin:0 auto;
+  padding:0px 3% 0px 3%;
+}
+
+// Blog Page Styles
+
+.theme-single-posts {
+  padding:40px 0 40px 0;
+
+  .theme-blog-title {
+    margin-bottom:4px;
+  }
+  .theme-date {
+    margin-top:4px;
+  }
+
+  .wp-block-image.is-resized {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+
+    img {
+      width:100% !important;
+      height:auto !important;
+    }
+  }
+
+
+
+}
+
+// Share Links
+
+.theme-share-links {
+
+  ul {
+    @include theme-flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    padding:0;
+
+    li {
+      font-family:$primary-font;
+      list-style-type:none;
+      margin-right:14px;
+
+
+      a {
+        color:$primary-color;
+        font-size:24px;
+
+        &:hover {
+          color:#000000;
+        }
+      }
+    }
+  }
+}
+
+// Archive Posts
+
+.theme-archive-posts {
+  padding:80px 0 80px 0;
+
+  @media screen and (max-width: 1024px) {
+    padding:60px 0 60px 0;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding:40px 0 40px 0;
+  }
+
+
+  h2 {
+    text-align:center;
+    margin-top:0;
+  }
+}
+
+// Posts Indicators
+
+.theme-prev-next-link-container {
+  @include theme-flex;
+  flex-flow:row nowrap;
+  justify-content:space-between;
+  padding:40px 0 40px 0;
+
+  a {
+    font-family:$primary-font;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:#676767;
+  }
+
+  .fa-caret-left {
+    margin-right:20px;
+    color:$primary-color;
+  }
+
+  .fa-caret-right {
+    margin-left:20px;
+    color:$primary-color;
+  }
+}
+
+// Error Page Styles
+
+.theme-error-page {
+
+  text-align:center;
+  padding:130px 0;
+
+  img {
+    max-width:100%;
+    width:50%;
+    height:auto;
+    margin:0 auto;
+  }
+
+  p {
+    font-size:48px;
+    text-transform:uppercase;
+    color:#000000;
+    text-align:center;
+    font-weight:600;
+    margin:12px 0;
+
+    @media screen and (max-width: 767px) {
+      font-size:30px;
+    }
+  }
+
+  a {
+    display:inline-block;
+    font-size:36px;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:#ffffff;
+    background:#000000;
+    text-align:center;
+    font-weight:600;
+    font-family:$secondary-font;
+    padding:8px 12px;
+    margin:0 auto;
+
+    @media screen and (max-width: 767px) {
+      font-size:24px;
+    }
+
+    @media screen and (max-width: 320px) {
+      font-size:18px;
+    }
+
+    @include set-transition(300ms);
+
+    &:hover {
+      background:$primary-color;
+    }
+  }
+}

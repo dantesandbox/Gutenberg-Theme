@@ -1,0 +1,101 @@
+// Front Page Heros
+
+.theme-hero {
+  @include theme-g-bg-position(cover,center,center);
+  background:#ffffff;
+  position:relative;
+  overflow:hidden;
+  padding:300px 0px;
+
+  h2 {
+
+    text-align:center;
+    font-size:4em;
+    max-width:800px;
+    //position: absolute;
+    //transform: translate(-50%,-50%);
+    color:$secondary;
+    display:block;
+    margin:0px auto;
+  }
+
+  p {
+    text-align:center;
+  }
+
+  .logo-svg {
+    width:300px;
+    height:auto;
+    margin:0 auto;
+    overflow: visible;
+    padding:20%;
+
+
+    path {
+      fill:rgba(255,255,255,1);
+    }
+
+  }
+}
+
+
+// Inner Page Heros
+
+.theme-hero-inner {
+  @include theme-g-bg-position(cover,center,center);
+  padding:200px 0px 150px 0px;
+  background:#dddddd;
+  position:relative;
+
+  h1 {
+    text-align:center;
+  }
+
+  p {
+    text-align:center;
+  }
+
+  .logo-svg {
+    width:250px;
+    height:auto;
+    margin:0 auto;
+
+
+    path {
+      fill:rgba(255,255,255,0.5);
+    }
+
+  }
+}
+
+// Inner Page Heros
+.theme-stage {
+  overflow:hidden;
+
+.theme-hero-interactive {
+  @include theme-g-bg-position(cover,center,center);
+  padding:350px 150px;
+  background:#dddddd;
+  position:relative;
+
+  h1 {
+    text-align:center;
+  }
+
+  p {
+    text-align:center;
+  }
+
+  .parallax-svg {
+    width:300px;
+    height:auto;
+    margin:0 auto;
+
+    svg {
+      path {
+        fill:rgba(255,255,255,0.5);
+      }
+    }
+  }
+ }
+}

@@ -1,0 +1,111 @@
+.theme-footer {
+  background:#000000;
+  color:#ffffff;
+  padding:30px 0 30px 0;
+
+  .theme-footer-container {
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+
+    .theme-footer-row {
+      @include theme-flex;
+      flex-flow:row nowrap;
+      justify-content:space-between;
+
+      @media screen and (max-width: 1199px) {
+        padding:0 3%;
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-flow:row wrap;
+      }
+
+      .theme-footer-left {
+
+          @media screen and (max-width: 768px) {
+            flex-basis:100%;
+            text-align:center;
+            order:2;
+          }
+
+          p {
+            color:#ffffff;
+            font-weight:600;
+            font-size:0.9em;
+            text-align:left !important;
+
+            @media screen and (max-width: 768px) {
+              flex-basis:100%;
+              text-align:center;
+              order:2;
+              text-align:center !important;
+            }
+          }
+
+          a {
+            color:#ffffff;
+            text-decoration:none;
+          }
+
+          .theme-footer-social-links {
+            @include theme-flex;
+            flex-flow:row nowrap;
+            padding:0;
+
+            @media screen and (max-width: 768px) {
+              justify-content:center;
+            }
+
+            li {
+              margin-right:12px;
+              list-style-type:none;
+
+              &:last-child {
+                margin-right:0px;
+              }
+
+              a {
+                color:$primary-color !important;
+                font-size:1.5em;
+
+                &:hover {
+                  color:#ffffff !important;
+                }
+              }
+            }
+          }
+
+          .theme-copyright {
+            font-style:italic;
+            font-weight:200;
+            text-transform:uppercase;
+          }
+      }
+
+      .theme-footer-right {
+          @include theme-flex;
+          align-items:center;
+          justify-content:center;
+
+          @media screen and (max-width: 768px) {
+            flex-basis:100%;
+            order:1;
+          }
+
+          img {
+            width:180px;
+            height:auto;
+
+            @media screen and (max-width: 500px){
+              width:120px;
+            }
+
+            @media screen and (max-width: 320px){
+              width:100px;
+            }
+          }
+      }
+    }
+  }
+}
